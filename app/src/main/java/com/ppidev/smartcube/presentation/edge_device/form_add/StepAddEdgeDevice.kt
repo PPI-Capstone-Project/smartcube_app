@@ -200,7 +200,7 @@ fun Step3(
             onTextChanged = {
                 onSourceAddressChange(it)
             },
-            placeholder = "source address device : IP / Usb / RTSP",
+            placeholder = "source address device : http / usb / RTSP",
         )
 
         Spacer(modifier = Modifier.size(14.dp))

@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.res.Configuration.UI_MODE_NIGHT_NO
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import android.widget.Toast
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -31,7 +32,6 @@ import androidx.compose.material.icons.filled.Logout
 import androidx.compose.material.icons.filled.SupervisedUserCircle
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -81,6 +81,7 @@ fun ProfileScreen(
             .fillMaxSize()
             .verticalScroll(rememberScrollState())
             .padding(horizontal = 16.dp)
+            .padding(bottom = 120.dp)
     ) {
         Column(
             modifier = Modifier
@@ -88,16 +89,24 @@ fun ProfileScreen(
                 .padding(top = 80.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            AsyncImage(
-                error = painterResource(id = R.drawable.thumb_error),
-                model = state.user?.userAvatar,
-                contentDescription = "avatar",
-                modifier = Modifier
-                    .shadow(ambientColor = Color.Gray, elevation = 24.dp, shape = CircleShape)
-                    .size(110.dp)
-                    .clip(CircleShape)
-                    .border(6.dp, Color.Red, CircleShape)
-            )
+            if (state.user?.userAvatar != null) {
+                AsyncImage(
+                    error = painterResource(id = R.drawable.thumb_error),
+                    model = state.user.userAvatar,
+                    contentDescription = "avatar",
+                    modifier = Modifier
+                        .shadow(ambientColor = Color.Gray, elevation = 24.dp, shape = CircleShape)
+                        .size(110.dp)
+                        .clip(CircleShape)
+                        .border(6.dp, Color.Red, CircleShape)
+                )
+            } else {
+                Image(
+                    painter = painterResource(id = R.drawable.thumb_profile),
+                    contentDescription = "profile",
+                    modifier = Modifier.size(110.dp)
+                )
+            }
 
             Text(
                 text = state.user?.userName ?: "-", style = TextStyle(

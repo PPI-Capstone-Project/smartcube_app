@@ -204,8 +204,8 @@ fun DashboardContentView(
                             .height(44.dp),
                             shape = RoundedCornerShape(4.dp),
                             colors = ButtonDefaults.buttonColors(
-                                containerColor = MaterialTheme.colorScheme.surface,
-                                contentColor =  MaterialTheme.colorScheme.onSurface
+                                containerColor = MaterialTheme.colorScheme.primary,
+                                contentColor =  MaterialTheme.colorScheme.onPrimary
                             ),
                             onClick = {
                                 navigateCreateNewServer()

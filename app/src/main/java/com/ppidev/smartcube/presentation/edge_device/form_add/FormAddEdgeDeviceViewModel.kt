@@ -32,8 +32,6 @@ class FormAddEdgeDeviceViewModel @Inject constructor(
     var state by mutableStateOf(FormAddEdgeDeviceState())
         private set
 
-    private val gson = Gson()
-
     fun onEvent(event: FormAddEdgeDeviceEvent) {
         viewModelScope.launch(Dispatchers.IO) {
             when (event) {

@@ -159,7 +159,7 @@ fun UpdateEdgeDeviceScreen(
                 CustomInputField(
                     text = state.sourceAddress,
                     label = "Source address",
-                    placeholder = "Enter source address device : IP/RTSP/USB",
+                    placeholder = "Enter source address device : HTTP/RTSP/USB",
                     errorText = state.errors.sourceAddress,
                     onTextChanged = {
                         onEvent(UpdateEdgeDeviceEvent.OnChangeSourceAddress(it))

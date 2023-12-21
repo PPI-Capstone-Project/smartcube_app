@@ -25,6 +25,8 @@ import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.MoreVert
+import androidx.compose.material.icons.filled.PlayCircle
+import androidx.compose.material.icons.filled.RestartAlt
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.DropdownMenu
@@ -233,8 +235,39 @@ fun DetailEdgeDeviceSensorScreen(
                     contentDescription = null
                 )
             }
+            Spacer(modifier = Modifier.size(8.dp))
 
-            Spacer(modifier = Modifier.size(56.dp))
+            Row(
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Button(onClick = {
+                }, shape = RoundedCornerShape(4.dp)) {
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.Start
+                    ) {
+                        Icon(imageVector = Icons.Filled.PlayCircle, contentDescription = "start device")
+                        Spacer(modifier = Modifier.size(4.dp))
+                        Text(text = "Start")
+                    }
+                }
+
+                Spacer(modifier = Modifier.size(12.dp))
+
+                Button(onClick = {
+                }, shape = RoundedCornerShape(4.dp)) {
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.Start
+                    ) {
+                        Icon(imageVector = Icons.Filled.RestartAlt, contentDescription = "start device")
+                        Spacer(modifier = Modifier.size(4.dp))
+                        Text(text = "Restart")
+                    }
+                }
+            }
+
+            Spacer(modifier = Modifier.size(16.dp))
 
             CustomTab(
                 currentPage = pagerState.currentPage,
