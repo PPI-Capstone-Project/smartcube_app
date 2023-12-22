@@ -29,6 +29,8 @@
 </div>
 Smartcube application is security application that can identify fires early, Its combined with smartcube-cli and powered by Artificial Intelligence to detect fires from cameras and sensors
 
+Figma Link : https://www.figma.com/file/72IKITIxQL2AkhlHBRrcxV/Smartcube-UI?type=design&node-id=0-1&mode=design&t=BbxpXgMwWOOk6iaG-0
+
 ### Build with
 * Kotlin
 * Jetpack compose
@@ -70,7 +72,6 @@ This is an example of how to list things you need to use the software and how to
 Unit Test using JUnit4 = https://junit.org/junit4
 
 UI Test using maestro = https://maestro.mobile.dev
-
 
 <!-- CONTACT -->
 ## Contact
