@@ -11,7 +11,6 @@
 
   <p align="center">
     <br />
-    <br />
     <a href="https://drive.google.com/drive/u/1/folders/1m3hS9c6P0lxumXinc5HAL7X440S0v86h">Release app</a>
     ·
     <a  href="mailto:iqbalmaulana172703@gmail.com?subject=Smartcube - ReportBug">Report Bug</a>
