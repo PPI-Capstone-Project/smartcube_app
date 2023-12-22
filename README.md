@@ -7,10 +7,9 @@
     <img src="https://github.com/PPI-Capstone-Project/smartcube_app/blob/master/screen/app_logo.svg" alt="Logo" width="100" height="100">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Smartcube Application</h3>
 
   <p align="center">
-    Smartcube Application
     <br />
     <br />
     <a href="https://drive.google.com/drive/u/1/folders/1m3hS9c6P0lxumXinc5HAL7X440S0v86h">Release app</a>
@@ -21,29 +20,9 @@
   </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
-
 <!-- ABOUT THE PROJECT -->
 ## Smartcube Application
+
 <div float="left">
   <img src='https://github.com/PPI-Capstone-Project/smartcube_app/blob/dev/screen/Splash%20screen.png?raw=true' width="30%">
   <img src='https://github.com/PPI-Capstone-Project/smartcube_app/blob/dev/screen/detail-server.jpg?raw=true' width="30%">
@@ -88,6 +67,10 @@ This is an example of how to list things you need to use the software and how to
 4. Setup firebase FCM and add google-services.json in app folder
 6. Run the project
 
+### Testing
+Unit Test using JUnit4 = https://junit.org/junit4
+
+UI Test using maestro = https://maestro.mobile.dev
 
 
 <!-- CONTACT -->
@@ -99,7 +82,3 @@ Project Link: [https://github.com/PPI-Capstone-Project/smartcube_app](https://gi
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Testing
-Unit Test using JUnit4 = https://junit.org/junit4
-
-UI Test using maestro = https://maestro.mobile.dev
