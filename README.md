@@ -60,8 +60,8 @@ This is an example of how to list things you need to use the software and how to
   MQTT_SERVER_HOST=f1096f5d.ala.asia-southeast1.emqxsl.com
   MQTT_SERVER_PORT=8883
   MQTT_CA_CERT="./mqtt-ssl.crt"
-  MQTT_USERNAME=
-  MQTT_PASSWORD=
+  MQTT_USERNAME=zoc
+  MQTT_PASSWORD=zocc
   MQTT_TOPIC=python/mqttSmartCupe
   MQTT_TOPIC2=smartcube/receivecmd
 ```
